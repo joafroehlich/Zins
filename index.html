@@ -5,34 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zinsrechnung</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>       
   
 </head>
 <body style="background-color: white; margin-top: 1em; ">
        
 
     <style> 
+         
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;} 
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;}  
                 
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
-        button { font-family: Verdana, Sans-serif; }
+                }
         input {background-color:yellow; }
     </style>
+    
+	<main>
     
 	
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Zinsrechnung</p>
     <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-    
+
+<div class="check">
+
   <!--//Aufgabe 1-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 1
+  <h2>Aufgabe 1</h2>
 
-Wie viel Zinsen sind jährlich für ein Darlehen 
-von 6800 € bei einem Zinssatz von 7,3 % zu zahlen?
+<p>Wie viel Zinsen sind jährlich für ein Darlehen 
+von 6800 € bei einem Zinssatz von 7,3 % zu zahlen?</p>
 
- <input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
+Es sind <input type="text" id="Eintrag1" maxlength="6" > €</input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
   
                      <script>
                         function Aufgabe1() { 
@@ -49,23 +77,25 @@ von 6800 € bei einem Zinssatz von 7,3 % zu zahlen?
 
      <!--//Aufgabe 2-->
 
-  <pre><p class="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2>
 
-Ein Unternehmer muss einen Kredit zu 8,5 % 
+<p>Ein Unternehmer muss einen Kredit zu 8,5 % 
 aufnehmen. 
 Nach einem Jahr zahlt er 1275 € Zinsen.
-Wie hoch ist der Kredit?   <button  onclick="window.open('Zins_Aufgabe2.html');" >Lösung</button></p></pre>
+Wie hoch ist der Kredit?</p>
+
+   <button  onclick="window.open('Zins_Aufgabe2.html');" >Lösung</button></p></pre>
            
      <!--//Aufgabe 3--> 
 
-    <pre><p class ="Aufgabe" >Aufgabe 3
+    <h2>Aufgabe 3</h2>
 
-Für seine Hypothek muss ein Bauherr jährlich 
+<p>Für seine Hypothek muss ein Bauherr jährlich 
 12 600 € Zinsen bezahlen. 
 Der Zinssatz beträgt 7,5 %.
-Wie hoch ist die Hypothek? 
+Wie hoch ist die Hypothek? </p>
 
- <input type="text" id="Eintrag3" maxlength="6" size="2" style= background-color:yellow > €</input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre>
+Sie beträgt <input type="text" id="Eintrag3" maxlength="6" > € </input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p>
   
   
                      <script>c
@@ -83,25 +113,26 @@ Wie hoch ist die Hypothek?
 
     <!--//Aufgabe 4-->
 
-  <pre><p class="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2>
 
-Ein Hausbesitzer kann zur Zeit eine Restschuld 
+<p>Ein Hausbesitzer kann zur Zeit eine Restschuld 
 von 20 000 € nicht tilgen. 
 Er zahlt dafür jährlich 7,5 % Zinsen.
-Wie viel Zinsen hat er nach 2 Jahren gezahlt?  
-<button  onclick="window.open('Zins_Aufgabe4.html');">Lösung</button></p></pre>
+Wie viel Zinsen hat er nach 2 Jahren gezahlt? </p>
+ 
+<button  onclick="window.open('Zins_Aufgabe4.html');">Lösung</button></p>
   
           <!--//Aufgabe 5--> 
 
-      <pre><p class ="Aufgabe" >Aufgabe 5
+      <h2>Aufgabe 5</h2>
 
-Eine Kundin will einen Kredit über 5000 € nach 
+<p>Eine Kundin will einen Kredit über 5000 € nach 
 einem Jahr zurückzahlen. Welchen Betrag muss sie 
-der Bank bei einem Zinssatz von 12,3 % überweisen.
+der Bank bei einem Zinssatz von 12,3 % überweisen. </p>
 
- <input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow > €</input> <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p></pre>
+ <input type="text" id="Eintrag5" maxlength="4" > €</input> <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p>
   
-     
+    
      <script>
                         function Aufgabe5() { 
                                                 
@@ -117,25 +148,26 @@ der Bank bei einem Zinssatz von 12,3 % überweisen.
 
     <!--//Aufgabe 6-->
 
-  <pre><p class="Aufgabe" >Aufgabe 6
+  <h2>Aufgabe 6</h2>
 
-Zum Bau eines Hauses ist ein Kredit von 180 000 € 
+<p>Zum Bau eines Hauses ist ein Kredit von 180 000 € 
 nötig. Die Sparkasse gewährt einen Zinssatz von 
 6,8 %. 
-Wie hoch ist die Zinsbelastung im ersten Jahr? 
-<button  onclick="window.open('Zins_Aufgabe6.html');" >Lösung</button></p></pre>
+Wie hoch ist die Zinsbelastung im ersten Jahr?  </p>
+
+<button  onclick="window.open('Zins_Aufgabe6.html');" >Lösung</button></p>
       
    <!--//Aufgabe 7--> 
 
-  <pre><p class ="Aufgabe" >Aufgabe 7
+  <h2>Aufgabe 7</h2>
 
-2750 € sind nach einem Jahr einschließlich Zinsen 
+<p>2750 € sind nach einem Jahr einschließlich Zinsen 
 auf 2857,25 € angewachsen. 
-Wie hoch ist der Zinssatz? 
+Wie hoch ist der Zinssatz?</p> 
 Tragen Sie das Ergebnis auf 1 Stelle nach dem 
-Komma gerundet ein.
+Komma gerundet ein.  </p>
 
-  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > %</input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre>
+Er beträgt <input type="text" id="Eintrag7" maxlength="3" > %</input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p>
     
 
                     <script>
@@ -153,25 +185,27 @@ Komma gerundet ein.
         
        <!--//Aufgabe 8-->   
              
-      <pre><p class="Aufgabe" >Aufgabe 8
+      <h2>Aufgabe 8</h2>
 
-Für ein Guthaben von 7500 € schreibt die Bank 
+<p>Für ein Guthaben von 7500 € schreibt die Bank 
 412,50 € Jahreszinsen gut.
-Wie hoch ist der Zinssatz?  <button  onclick="window.open('Zins_Aufgabe8.html');" >Lösung</button></p></pre>
+Wie hoch ist der Zinssatz?</p> 
+
+<button  onclick="window.open('Zins_Aufgabe8.html');" >Lösung</button></p></pre>
 
  <!--//Aufgabe 9--> 
 
- <pre><p class ="Aufgabe" >Aufgabe 9
+ <h2>Aufgabe 9</h2>
 
-Eine Bank gewährt auf einen Betrag von 7350 € 
+<p>Eine Bank gewährt auf einen Betrag von 7350 € 
 einen Zinssatz von 3,2 % bei einer Laufzeit 
-von 4 Jahren.
+von 4 Jahren.</p>
 a) Wie hoch sind die Gesamtzinsen, wenn sie erst
-nach 4 Jahren abgehoben werden?  
+nach 4 Jahren abgehoben werden?</p>  
 b) Wie hoch sind die Gesamtzinsen, wenn sie jedes
-Jahr abgehoben werden?
+Jahr abgehoben werden?</p> 
 
- <input type="text" id="Eintrag9" maxlength="6" size="2" style= background-color:yellow > €</input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p></pre>
+Sie betragen <input type="text" id="Eintrag9" maxlength="6" > €</input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p>
   
 
 <script>
@@ -188,32 +222,33 @@ Jahr abgehoben werden?
                       </script>
         <!--//Aufgabe 10-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 10
+        <h2>Aufgabe 10</h2>
 
-Ein Handwerksbetrieb braucht für ein Jahr einen 
-Kredit über 18 000 €. 
-Es liegen 3 Angebote vor:
-A 15 000 € zu 4,5 %       3 000 € zu 6,35 %
-B 12 000 € zu 4,5 %       6 000 € zu 6,5 %
-C   8 500 € zu 4,9 %      9 500 € zu 5,1 %.
-Wie viel kostet das günstigste Angebot?  
-<button  onclick="window.open('Zins_Aufgabe10.html');" >Lösung</button></p></pre>
+<p>Ein Handwerksbetrieb braucht für ein Jahr einen 
+Kredit über 18 000 €.</p> 
+Es liegen 3 Angebote vor:</p>
+A 15 000 € zu 4,5 %       3 000 € zu 6,35 %</p>
+B 12 000 € zu 4,5 %       6 000 € zu 6,5 %</p>
+C   8 500 € zu 4,9 %      9 500 € zu 5,1 %.</p>
+Wie viel kostet das günstigste Angebot?  </p>
+
+<button  onclick="window.open('Zins_Aufgabe10.html');" >Lösung</button></p>
 
         <!--//Aufgabe 11-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 11
+    <h2>Aufgabe 11</h2>
 
-Eine Verkäuferin kauft sich einen PC. 
-Zwei Drittel des Kaufpreises von 1989 € hat sie 
+<p>Eine Verkäuferin kauft sich einen PC. 
+Zwei Drittel des Kaufpreises von <br class="br-desk">1989 € hat sie 
 gespart.
 Den Rest möchte sie für ein Jahr leihen. 
 Ihr Freund bietet ihr eine vierteljährliche 
 Rückzahlung von 180 € an. Ihr Chef will am Ende 
 des Jahres den geliehenen Betrag plus 55 € 
 zurückhaben. Wie hoch ist der Zinssatz des 
-günstigeren Angebots? 
+günstigeren Angebots? </p> 
 
- <input type="text" id="Eintrag11" maxlength="3" size="1" style= background-color:yellow > %</input> <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
+Er beträgt <input type="text" id="Eintrag11" maxlength="3" > %</input> <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
   
 
                     <script>
@@ -229,21 +264,23 @@ günstigeren Angebots?
                       
       <!--//Aufgabe 12-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 12
+        <h2>Aufgabe 12</h2>
 
-Ein Kunde leiht sich bei einer Bank 4800 € für 
+<p>Ein Kunde leiht sich bei einer Bank 4800 € für 
 5 Monate zu einem Zinssatz von 5,5 %. 
-Wie viel Zinsen muss er bezahlen?  <button  onclick="window.open('Zins_Aufgabe12.html');" >Lösung</button></p></pre>
+Wie viel Zinsen muss er bezahlen?  </p> 
+
+<button  onclick="window.open('Zins_Aufgabe12.html');" >Lösung</button></p>
                 
       <!--//Aufgabe 13-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 13
+    <h2>Aufgabe 13</h2>
 
-Eine Sparkasse verleiht 16 400 € für 70 Tage zu 
-einem Zinssatz von 10,8 %.
-Wie hoch sind die Zinsen? 
+<p>Eine Sparkasse verleiht 16 400 € für 70 Tage zu 
+einem Zinssatz von <br class="br-desk">10,8 %.
+Wie hoch sind die Zinsen?  </p> 
 
- <input type="text" id="Eintrag13" maxlength="6" size="2" style= background-color:yellow > €</input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button> </p></pre>
+Sie betragen <input type="text" id="Eintrag13" maxlength="6" > €</input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button> </p>
   
                     <script>
                         function Aufgabe13() { 
@@ -259,26 +296,27 @@ Wie hoch sind die Zinsen?
                       
         <!--//Aufgabe 14-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 14
+        <h2>Aufgabe 14</h2>
 
-Eine Bank verzinst ein Kapital von 7200 € mit 
+<p>Eine Bank verzinst ein Kapital von 7200 € mit 
 3,5 %. Wie viel Zinsen erhält man nach 2 Monaten 
-und 20 Tagen?
+und 20 Tagen? </p> 
+
 <button  onclick="window.open('Zins_Aufgabe14.html');"  >Lösung</button></p></pre>
      
         <!--//Aufgabe 15-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 15
+    <h2>Aufgabe 15</h2>
 
-Wer ein Gehaltskonto bei einer Bank hat, darf 
+<p>Wer ein Gehaltskonto bei einer Bank hat, darf 
 dieses Konto auch überziehen, er darf also mehr 
 Geld abheben als auf dem Konto ist, allerdings 
 muss er dafür Zinsen bezahlen.Wie viel muss ein 
 Kunde bezahlen, wenn er sein Konto 15 Tage mit 
 3500 € überziehtund die Bank 13,5 % Überziehungs-
-zinsen verlangt? 
+zinsen verlangt? </p> 
 
- <input type="text" id="Eintrag15" maxlength="5" size="1" style= background-color:yellow > €</input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button> </p></pre>
+Es sind <input type="text" id="Eintrag15" maxlength="5" size="1" style= background-color:yellow > €</input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button> </p></pre>
   
 
                     <script>
@@ -295,22 +333,24 @@ zinsen verlangt?
                       
             <!--//Aufgabe 16-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 16
+        <h2>Aufgabe 16</h2>
 
-Für ein Darlehen bezahlt ein Bankkunde bei einem 
+<p>Für ein Darlehen bezahlt ein Bankkunde bei einem 
 Zinssatz von 8 % im Halbjahr 1600 € Zinsen.
-Wie hoch ist das Darlehen?    <button  onclick="window.open('Zins_Aufgabe16.html');"  >Lösung</button></p></pre>
+Wie hoch ist das Darlehen?  </p> 
+
+  <button  onclick="window.open('Zins_Aufgabe16.html');"  >Lösung</button></p>
 
         <!--//Aufgabe 17-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 17
+    <h2>Aufgabe 17</h2>
 
-Eine Bank gewährt für ein Guthaben von 4125 € 
+<p>Eine Bank gewährt für ein Guthaben von 4125 € 
 einen Zinssatz von 6%. Als der Kunde das Geld 
 abhebt, bekommt er 55 € Zinsen.
-Wie viel Tage war das Geld angelegt?  
+Wie viel Tage war das Geld angelegt?  </p> 
 
- <input type="text" id="Eintrag17" maxlength="2" size="1" style= background-color:yellow > Tage</input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button> </p></pre>
+ <input type="text" id="Eintrag17" maxlength="2" > Tage</input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button> </p>
   
                     <script>
                         function Aufgabe17() { 
@@ -326,22 +366,24 @@ Wie viel Tage war das Geld angelegt?
 
       <!--//Aufgabe 18-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 18
+        <h2>Aufgabe 18</h2>
 
-Ein Bankkunde hat sein Konto 15 Tage lang um 
+<p>Ein Bankkunde hat sein Konto 15 Tage lang um 
 2400 € überzogen. Die Bank verlangt für diesen 
 Zeitraum 12,50 € Zinsen.
-Wie hoch ist der Zinssatz?   <button  onclick="window.open('Zins_Aufgabe18.html');" >Lösung</button></p></pre>  
+Wie hoch ist der Zinssatz?    </p> 
+
+<button  onclick="window.open('Zins_Aufgabe18.html');" >Lösung</button></p> 
         
 <!--//Aufgabe 19-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 19
+    <h2>Aufgabe 19</h2>
 
-Nach 3 Jahren ist ein Kapital bei einem Zinssatz 
+<p>Nach 3 Jahren ist ein Kapital bei einem Zinssatz 
 von 3,5 % auf 3326,15 € angewachsen.
-Wie hoch war das Anfangskapital Ko?       
+Wie hoch war das Anfangskapital K<sub>0</sub>?    </p> 
 
- <input type="text" id="Eintrag19" maxlength="4" size="1" style= background-color:yellow > %</input> <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button> </p></pre>
+Es betrug <input type="text" id="Eintrag19" maxlength="4"  > € </input> <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button> </p>
   
 
                     <script>
@@ -358,32 +400,33 @@ Wie hoch war das Anfangskapital Ko?
                       
      <!--//Aufgabe 20-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 20
+        <h2>Aufgabe 20</h2>
 
-Für ihre neugeborene Tochter legen deren Eltern 
+<p>Für ihre neugeborene Tochter legen deren Eltern 
 5000 € zu einem Zinssatz von 6,5 % an. 
 Die Auszahlung erfolgt nach 18 Jahren mit 
-Zinseszinsen.
+Zinseszinsen.</p>
 a) Welchen Betrag bekommt das Mädchen nach 
-18 Jahren?   
+18 Jahren?</p>   
 b) Nach welcher Zeit hat sich das Kapital 
-verdoppelt? 
-<button  onclick="window.open('Zins_Aufgabe20.html');"  >Lösung</button></p></pre>
+verdoppelt?  </p> 
+
+<button  onclick="window.open('Zins_Aufgabe20.html');"  >Lösung</button></p>
                   
 <!--//Aufgabe 21-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 21
+    <h2>Aufgabe 21</h2>
 
-Für ihr Enkelkind legen die Großeltern 1000 € zu 
-6 % an.
+<p>Für ihr Enkelkind legen die Großeltern 1000 € zu 
+6 % an.</p>
 a) Nach wie viel Jahren hat sich der Betrag 
 verdoppelt, wenn das Enkelkind keine Zinsen 
-abhebt?
+abhebt?</p>
 
- <input type="text" id="Eintrag21" maxlength="3" size="1" style= background-color:yellow > Jahre</input> <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
+Nach <input type="text" id="Eintrag21" maxlength="3" > Jahren </input> <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button><p>
 
 b) Nach wie viel Jahren hätte sich ein Kapital 
-von 10 000 € bei 6 % verdoppelt?   </p></pre>
+von 10 000 € bei 6 % verdoppelt?   </p>
     
                     <script>
                         function Aufgabe21() { 
@@ -399,33 +442,34 @@ von 10 000 € bei 6 % verdoppelt?   </p></pre>
                       
  <!--//Aufgabe 22-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 22
+        <h2>Aufgabe 22</h2>
 
-Ein Lottogewinn von 1 000 000 € wird für 2 Jahre 
-angelegt. Es liegen 3 Angebote vor:
-a) 1. Jahr Zinssatz 4 %, im 2. Jahr 6 %
-b) 1. Jahr 3 %, im 2. Jahr 7 %
-c) 1. Jahr 5 %, im 2. Jahr 5 %.
-Wie hoch ist der maximal zu erzielende Betrag?  
-<button  onclick="window.open('Zins_Aufgabe22.html');" >Lösung</button></p></pre>
+<p>Ein Lottogewinn von 1 000 000 € wird für 2 Jahre 
+angelegt. Es liegen 3 Angebote vor:</p>
+a) 1. Jahr Zinssatz 4 %, im 2. Jahr 6 %</p>
+b) 1. Jahr 3 %, im 2. Jahr 7 %</p>
+c) 1. Jahr 5 %, im 2. Jahr 5 %.</p>
+Wie hoch ist der maximal zu erzielende Betrag? </p>
+ 
+<button  onclick="window.open('Zins_Aufgabe22.html');" >Lösung</button></p>
 
 <!--//Aufgabe 23-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 23
+    <h2>Aufgabe 23</h2>
 
-Ein Mädchen hat seine Ersparnisse für 1 Jahr fest 
+<p>Ein Mädchen hat seine Ersparnisse für 1 Jahr fest 
 angelegt. 
 Es erhält am Ende des Jahres 100 € Zinsen.
-Wie viel Zinsen hätte es bekommen, 
+Wie viel Zinsen hätte es bekommen,</p> 
 a) bei doppelt so hohen Ersparnissen und doppelt 
-so hohem Zinssatz? 
+so hohem Zinssatz? </p>
 
- <input type="text" id="Eintrag23" maxlength="4" size="1" style= background-color:yellow > €</input> <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
+ <input type="text" id="Eintrag23" maxlength="4" > €</input> <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button></p>
 
 b) bei doppelt so hohen Ersparnissen und halb so 
-hohem Zinssatz?   
+hohem Zinssatz?</p>   
 c) für die Hälfte der Ersparnisse und halb so 
-hohem Zinssatz?   </p></pre>
+hohem Zinssatz?   </p>
     
                     <script>
                         function Aufgabe23() { 
@@ -441,27 +485,28 @@ hohem Zinssatz?   </p></pre>
                       
 <!--//Aufgabe 24-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 24
+        <h2>Aufgabe 24</h2>
 
-Für ein Bauvorhaben gibt eine Bank ein Darlehen 
-von 80000 € zu einem Zinssatz von 4,5 %.
-a) Wie hoch ist der Jahreszins ohne Tilgung?  
+<p>Für ein Bauvorhaben gibt eine Bank ein Darlehen 
+von 80000 € zu einem Zinssatz von 4,5 %.</p> 
+a) Wie hoch ist der Jahreszins ohne Tilgung?</p>   
 b) Wie viel muss der Kunde insgesamt zurückzahlen, 
-wenn er jährlich 10% der Darlehenssumme tilgt?   
-<button  onclick="window.open('Zins_Aufgabe24.html');" >Lösung</button></p></pre>
+wenn er jährlich 10% der Darlehenssumme tilgt?   </p> 
+
+<button  onclick="window.open('Zins_Aufgabe24.html');" >Lösung</button></p>
 
 <!--//Aufgabe 25-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 25
+    <h2>Aufgabe 25</h2>
 
-Freunde legen bei verschiedenen Banken den 
-gleichen Betrag Ko an.
+<p>Freunde legen bei verschiedenen Banken den 
+gleichen Betrag K<sub>0</sub> an.
 Der eine erhält 4 %, der andere 4,5 %. 
 Nach einem Jahr hat der eine 2,30 € mehr auf 
 seinem Konto.
-Welchen Betrag haben sie angelegt? 
+Welchen Betrag haben sie angelegt? </p> 
 
- <input type="text" id="Eintrag25" maxlength="3" size="1" style= background-color:yellow > €</input> <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button> </p></pre>
+Er beträgt <input type="text" id="Eintrag25" maxlength="3" > €</input> <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button> </p></pre>
   
 
                     <script>
@@ -478,29 +523,30 @@ Welchen Betrag haben sie angelegt?
                       
   <!--//Aufgabe 26-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 26
+        <h2>Aufgabe 26</h2>
 
-Eine Bank bietet ein Darlehen von 10 000 € zu 
+<p>Eine Bank bietet ein Darlehen von 10 000 € zu 
 7,5 % Zinsen an. 
 Das Darlehen muss nach einem Jahr mit einer 
 Bearbeitungsgebühr von 300 € zurückgezahlt werden. 
 Eine andere verlangt 9,5 % ohne Bearbeitungs-
-gebühr. Wie teuer ist das günstigere Angebot?  
-<button  onclick="window.open('Zins_Aufgabe26.html');" >Lösung</button></p></pre>
+gebühr. Wie teuer ist das günstigere Angebot?  </p> 
+
+<button  onclick="window.open('Zins_Aufgabe26.html');" >Lösung</button></p>
 
   <!--//Aufgabe 27-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 27
+    <h2>Aufgabe 27</h2>
 
-Ein Bankkunde braucht für die Dauer eines Jahres 
+<p>Ein Bankkunde braucht für die Dauer eines Jahres 
 20 000 €. 
 Die Bank macht ihm 2 Angebote:
 Entweder 96 % Auszahlung bei 6 % Zinsen oder 98 % 
 Auszahlung bei 7,5 %.
 Wie hoch sind die Kosten für das günstigere 
-Angebot? 
+Angebot?  </p> 
 
- <input type="text" id="Eintrag27" maxlength="4" size="1" style= background-color:yellow > €</input> <button id="Pruef27" onclick="Aufgabe27()">Prüfen</button> </p></pre>
+Sie betragen <input type="text" id="Eintrag27" maxlength="4" size="1" style= background-color:yellow > €</input> <button id="Pruef27" onclick="Aufgabe27()">Prüfen</button> </p></pre>
   
 
                     <script>
@@ -516,25 +562,27 @@ Angebot?
                       
    <!--//Aufgabe 28--> 
              
-        <pre><p class="Aufgabe" >Aufgabe 28
+        <h2>Aufgabe 28</h2>
 
-Wie viel Jahre muss man 3 000 € verleihen, um bei 
+<p>Wie viel Jahre muss man 3 000 € verleihen, um bei 
 einem Zinssatz von 5,25 %
 und jährlicher Zinsauszahlung mehr als 372,50 € zu 
-erhalten? <button  onclick="window.open('Zins_Aufgabe28.html');" >Lösung</button></p></pre>
+erhalten? </p> 
+
+ <button  onclick="window.open('Zins_Aufgabe28.html');" >Lösung</button></p>
 
    <!--//Aufgabe 29-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 29
+    <h2>Aufgabe 29</h2>
 
-a) Auf welchen Betrag sind 10 000 € nach 3 Jahren 
+<p>a) Auf welchen Betrag sind 10 000 € nach 3 Jahren 
 bei einem Zinssatz von 4 % mit Zinseszins 
-angewachsen?
+angewachsen?</p> 
 
- <input type="text" id="Eintrag29" maxlength="8" size="4" style= background-color:yellow > €</input> <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button>
+Auf <input type="text" id="Eintrag29" maxlength="8" > €</input> <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button></p>
 
 b) Wie hoch sind die Zinsen insgesamt, bei 
-jährlicher Abhebung? </p></pre>
+jährlicher Abhebung? </p>
     
                     <script>
                         function Aufgabe29() {                                                
@@ -549,27 +597,28 @@ jährlicher Abhebung? </p></pre>
                       
     <!--//Aufgabe 30-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 30
+        <h2>Aufgabe 30</h2>
 
-Zu Beginn eines Jahres eröffnet ein Kunde ein 
+<p>Zu Beginn eines Jahres eröffnet ein Kunde ein 
 Konto und bezahlt 2750 € ein.
 Die Bank gewährt ihm einen Zinssatz von 5 %.
 Wie hoch ist das Guthaben nach 4 Jahren, wenn er 
-jedes Jahr zum Jahresende 100 € abhebt? 
-<button  onclick="window.open('Zins_Aufgabe30.html');" >Lösung</button></p></pre>
+jedes Jahr zum Jahresende 100 € abhebt? </p> 
+
+<button  onclick="window.open('Zins_Aufgabe30.html');" >Lösung</button></p>
 
     <!--//Aufgabe 31-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 31
+    <h2>Aufgabe 31</h2>
 
-Nach Abschluss eines Sparvertrages zahlt ein 
+<p>Nach Abschluss eines Sparvertrages zahlt ein 
 Auszubildender 600 € ein.
 Auf welchen Betrag ist sein Guthaben nach 
 5 Jahren angewachsen, 
 wenn der Zinssatz 5 % beträgt und er in der 
-Zwischenzeit kein Geld abhebt? 
+Zwischenzeit kein Geld abhebt?  </p> 
 
- <input type="text" id="Eintrag31" maxlength="6" size="2" style= background-color:yellow > €</input> <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button> </p></pre>
+Auf <input type="text" id="Eintrag31" maxlength="6" > €</input> <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button> </p>
   
 
                     <script>
@@ -585,33 +634,35 @@ Zwischenzeit kein Geld abhebt?
                       
             <!--//Aufgabe 32-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 32
+        <h2>Aufgabe 32</h2>
 
-Eine Bank verzinst ein Guthaben von 10 000 € 
+<p>Eine Bank verzinst ein Guthaben von 10 000 € 
 3 Jahre lang mit 4,5 %. Danach senkt sie den 
-Zinssatz auf 3,7 %.
+Zinssatz auf 3,7 %.</p>
 a) Wie hoch ist das Guthaben nach 6 Jahren bei 
-Zinseszins?   
+Zinseszins?</p>   
 b) Wie hoch hätte ein gleichbleibender Zinssatz 
 sein müssen, um auf den gleichen Endbetrag zu 
-kommen?  <button  onclick="window.open('Zins_Aufgabe32.html');" >Lösung</button></p></pre>
+kommen? </p> 
+
+ <button  onclick="window.open('Zins_Aufgabe32.html');" >Lösung</button></p></pre>
 
   <!--//Aufgabe 33-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 33
+    <h2>Aufgabe 33</h2>
 
-Ein Sparer hat vor 5 Jahren ein Anfangskapital 
+<p>Ein Sparer hat vor 5 Jahren ein Anfangskapital 
 eingezahlt, 
 das mittlerweile bei festem Zinssatz und 
 Zinseszins auf 2600,74 € angewachsen ist. 
 In weiteren 5 Jahren beträgt das Guthaben 
-3086,03 €.
-a) Welchen Betrag hat der Sparer angelegt?   
+3086,03 €.</p>
+a) Welchen Betrag hat der Sparer angelegt?  </p>
 
- <input type="text" id="Eintrag33" maxlength="4" size="1" style= background-color:yellow > €</input> <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button> 
+Es waren <input type="text" id="Eintrag33" maxlength="4" > €</input> <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button></p> 
 
 b) Nach wie viel Jahren hat sich das 
-Anfangskapital mehr als verdoppelt?     </p></pre>
+Anfangskapital mehr als verdoppelt?     </p>
     
 
                     <script>
@@ -627,24 +678,24 @@ Anfangskapital mehr als verdoppelt?     </p></pre>
                       
      <!--//Aufgabe 34-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 34
+        <h2>Aufgabe 34</h2>
 
-Zwei Angebote liegen vor:
-Bank 1: 1. Jahr 3 %, 2. Jahr 3,5 %, 3. Jahr 4 %.
-Bank 2: 5 % Zinsen bei 3 jähriger Festlegung.
+<p>Zwei Angebote liegen vor:</p>
+Bank 1: 1. Jahr 3 %, 2. Jahr 3,5 %, 3. Jahr 4 %.</p>
+Bank 2: 5 % Zinsen bei 3 jähriger Festlegung.</p>
 Ab welcher Kapitaleinlage beträgt der Unterschied 
-260 €, wenn das Geld nach 3 Jahren abgehoben wird? 
+260 €, wenn das Geld nach 3 Jahren abgehoben wird? </p>
 
-<button  onclick="window.open('Zins_Aufgabe34.html');" >Lösung</button></p></pre>
-
+<button  onclick="window.open('Zins_Aufgabe34.html');" >Lösung</button></p>
   <!--//Aufgabe 35-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 35
+    <h2>Aufgabe 35</h2>
 
-Jemand will 3456 € so anlegen, dass er nach 
+<p>Jemand will 3456 € so anlegen, dass er nach 
 9 Jahren 4900 € hat.
-Wie hoch muss der Zinssatz sein?   
- <input type="text" id="Eintrag35" maxlength="4" size="1" style= background-color:yellow > %</input> <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button> </p></pre>
+Wie hoch muss der Zinssatz sein?</p>
+   
+ <input type="text" id="Eintrag35" maxlength="4" > %</input> <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button> </p>
   
 
                     <script>
@@ -660,25 +711,27 @@ Wie hoch muss der Zinssatz sein?
                       
      <!--//Aufgabe 36-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 36
+        <h2>Aufgabe 36</h2>
 
-Wie hoch muss ein Kapital gewesen sein, das nach 
+<p>Wie hoch muss ein Kapital gewesen sein, das nach 
 5 Jahren bei einem Zinssatz von 5 % auf 7657,67 € 
-angewachsen ist?  <button  onclick="window.open('Zins_Aufgabe36.html');" >Lösung</button></p></pre>
+angewachsen ist? </p>
+
+ <button  onclick="window.open('Zins_Aufgabe36.html');" >Lösung</button></p></pre>
                  
     <!--//Aufgabe 37-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 37
+    <h2>Aufgabe 37</h2>
 
-Zur Finanzierung eines Hauses sind 120 000 € 
+<p>Zur Finanzierung eines Hauses sind 120 000 € 
 nötig. Die Bank bietet einen Jahreszinssatz 
 von 5 %. Der Kunde möchte den Kredit in 
-20 Jahren zurückzahlen. 
-a) Wie viel muss der Kunde pro Jahr bezahlen?
-b) Tragen Sie im Tilgungsplan den fehlenden 
-Betrag auf 2 Stellen nach dem Komma gerundet ein.
+20 Jahren zurückzahlen.</p> 
+a) Wie viel muss der Kunde pro Jahr bezahlen?</p>
+b) Ermitteln Sie im Tilgungsplan den fehlenden 
+Betrag auf 2 Stellen nach dem Komma gerundet.</p>
 
-        Schulden in €  Zinsen in €  Tilgung in €
+<pre>        Schulden in €  Zinsen in €  Tilgung in €
  1.Jahr    120 000        6000        3629,11
  2.Jahr    116 370,89     5818,54     3810,57
  3.Jahr    112 560,32     5628,02     4001,09
@@ -691,7 +744,7 @@ Betrag auf 2 Stellen nach dem Komma gerundet ein.
 10.Jahr     79 983,38     3999,17     5629,94
 11.Jahr     74 353,44     3717,67     5911,44
 12.Jahr     68 442,00     3422,10     6207,01
-13.Jahr     <input type="text" id="Eintrag37" maxlength="8" size="4" style= background-color:yellow > </input>     3111,75     6517,36
+13.Jahr         ?         3111,75     6517,36
 14.Jahr     55 717,63     2785,88     6843,23
 15.Jahr     48 874,40     2443,72     7185,39
 16.Jahr     41 689,01     2084,45     7544,66
@@ -700,7 +753,7 @@ Betrag auf 2 Stellen nach dem Komma gerundet ein.
 19.Jahr     17 904,47      895,22     8733,89
 20.Jahr      9 170,58      458,53     9170,5</p></pre>
 
-<button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
+? = <input type="text" id="Eintrag37" maxlength="8" > </input> <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
   
 
                     <script>
@@ -716,17 +769,19 @@ Betrag auf 2 Stellen nach dem Komma gerundet ein.
                       
       <!--//Aufgabe 38-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 38
+        <h2>Aufgabe 37</h2>
 
-Eine Bausparkasse bietet ihren Kunden eine 
-Geldanlage zu folgenden Zinskonditionen an:
-1. Jahr 2,25 %, 2. Jahr 2,5 %, 3. Jahr 2,75 %, 
-4. Jahr 3,25 %, 5. Jahr 4 %, 6. Jahr 5 %.
+<p>Eine Bausparkasse bietet ihren Kunden eine 
+Geldanlage zu folgenden Zinskonditionen an:</p>
+1. Jahr 2,25 %, 2. Jahr 2,5 %, 3. Jahr 2,75 %, </p>
+4. Jahr 3,25 %, 5. Jahr 4 %, 6. Jahr 5 %.</p>
 a) Auf welchen Betrag ist ein Anfangskapital von 
-20 000 € nach 6 Jahren angewachsen?   
+20 000 € nach 6 Jahren angewachsen?</p>   
 b) Ein Kunde hat nach 3 Jahren einen Betrag von 
 13 461,05 € auf seinem Konto. 
-Wie viel Geld hat er angelegt?  <button  onclick="window.open('Zins_Aufgabe38.html')" >Lösung</button></p></b></pre>
+Wie viel Geld hat er angelegt? </p> 
+
+ <button  onclick="window.open('Zins_Aufgabe38.html')" >Lösung</button></p></div>
                         
                  
 <a href="https://joafroehlich.github.io/Matheaufgaben-loesen/sek1.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
